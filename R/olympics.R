@@ -5,6 +5,7 @@ raw_results <-
   here("data-raw", "results.csv") |>
   read_csv()
 
+# Identify the youth games years
 youth_games <-
   raw_results |>
   filter(event |> str_detect("YOG")) |>
